@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="articles">
+    {{ range .Site.RegularPages }}
+    <article>
+        <a href="{{ .Permalink }}">
+            <h2>{{ .Title }}</h2>
+        </a>
+        <div class="article-excerpt">{{ .Description }}</div>
+    </article>
+    {{ end }}
+</div>
+
+{{ end }}

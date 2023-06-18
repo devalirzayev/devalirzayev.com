@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="article">
+    <article>
+        <div class="article-header">
+            <h1>This is random blog title</h1>
+            <div class="article-excerpt">{{ .Description }}</div>
+        </div>
+        <div class="article-body">
+            {{ .Content }}
+        </div>
+    </article>
+</div>
+{{ end }}
